@@ -1,0 +1,26 @@
+{
+    "name": "darshan/hello-package",
+    "description": "Laravel Hello Package",
+    "type": "library",
+    "license": "MIT",
+
+    "autoload": {
+        "psr-4": {
+            "Darshan\\HelloPackage\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Darshan\\HelloPackage\\HelloPackageServiceProvider"
+            ]
+        }
+    },
+
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
